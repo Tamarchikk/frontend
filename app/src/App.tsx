@@ -7,8 +7,8 @@ function App() {
   const { data: products, error, isLoading } = useAvailableProducts();
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Products</h1>
+      <header className="header">
+        <h1 className='h1'>Products</h1>
       </header>
       <div className="productsList">
         {isLoading && <p>Loading...</p>}
@@ -18,7 +18,7 @@ function App() {
             <div key={product.id}>
               <h2>{product.name}</h2>
               <p>Price: ${product.price}</p>
-              <img src={product.imageUrl} alt={product.name} />
+              <img src={product.imageUrl} alt={product.name} className='productImg' />
             </div>
           ))
         ) : (
