@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  background-color: rgb(248, 236, 220);
+}
+.h1 {
+  font-size: 45px;
+}
+.productImg {
+  width: 300px;
+}
+.productsList {
+  margin-top: 80px;
+}
